@@ -5,6 +5,7 @@
       :data="items"
       style="width: 100%">
       <el-table-column prop="_id" label="ID" width="240"></el-table-column>
+      <el-table-column prop="parent.name" label="上级分类"></el-table-column>
       <el-table-column prop="name" label="分类名称"></el-table-column>
       <el-table-column fixed="right" label="操作" width="180">
         <template slot-scope="scope">
@@ -31,7 +32,7 @@
     },
     methods: {
       async fetch() {
-        const res = await this.$http.get("/category/list")
+        const res = await this.$http.get("/rest/categories")
         this.items = res.data
       },
       async remove(row) {
@@ -40,7 +41,7 @@
           cancelButtonText: '取消',
           type: 'warning'
         }).then(async () => {
-          const res = await this.$http.delete(`/category/delete/${row._id}`)
+          const res = await this.$http.delete(`/rest/categories/${row._id}`)
           this.$message({
             type: 'success',
             message: '删除成功!'
