@@ -20,12 +20,21 @@
   export default {
     data(){
       return {
-        model: {}
+        model: {
+          username:"",
+          password:""
+        }
       }
     },
     methods: {
-      login(){
-        console.log(this.model)
+      async login(){
+        const res=await this.$http.post("login",this.model)
+        localStorage.token=res.data.token
+        this.$router.push("/")
+        this.$message({
+          type:"success",
+          message:"登陆成功"
+        })
       }
     }
   }
