@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Main from './views/main'
+import Main from './views/Main'
 import Login from './views/Login'
 
 import CategoryEdit from './views/CategoryEdit'
@@ -18,12 +18,12 @@ import AdminUserList from './views/AdminUserList.vue'
 
 Vue.use(Router)
 
-export default new Router({
+const router=new Router({
   routes: [
-    {path: '/login', name: 'login', component: Login},
+    {path: '/login', name: 'login', component: Login, meta: {isPublic: true}},
     {
       path: '/',
-      name: 'Main',
+      name: 'main',
       component: Main,
       children: [
         {path: "/category/create", component: CategoryEdit},
@@ -54,3 +54,11 @@ export default new Router({
     }
   ]
 })
+//前端登陆拦截
+router.beforeEach((to,from,next)=>{
+  if(!to.meta.isPublic && !localStorage.token){
+    return next("/login")
+  }
+  next()
+})
+export default router

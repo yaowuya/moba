@@ -78,7 +78,6 @@
 
 <script>
   export default {
-    name: "Main",
     data() {
       const item = {
         date: '2016-05-02',

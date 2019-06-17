@@ -20,6 +20,7 @@ http.interceptors.request.use(function (config) {
 http.interceptors.response.use(res => {
   return res
 }, err => {
+  console.log("error:",err);
   if (err.response.data.message) {
     Vue.prototype.$message({
       type: 'error',
