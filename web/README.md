@@ -33,3 +33,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 2、要进行样式重置
 
 >在使用拼合大图时，可以借助http://www.spritecow.com/这个网站确定图像的位置
+
+>你可以给子组件传入一个静态的值：<parent title="XX">
+但我们一般都是需要传动态的值，所以需要v-bind绑定：
+<parent v-bind:title="xx"> 简写<parent :title="xx">
