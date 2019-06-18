@@ -37,3 +37,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 >你可以给子组件传入一个静态的值：<parent title="XX">
 但我们一般都是需要传动态的值，所以需要v-bind绑定：
 <parent v-bind:title="xx"> 简写<parent :title="xx">
+
+>谷歌浏览器调试面板(console)可以通过两个$符号获取页面信息，$$(.class),如果值时对象，可以
+用JSON.stringify()转成对象字符串，容易复制
