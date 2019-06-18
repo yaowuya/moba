@@ -51,7 +51,6 @@
 
     <m-card icon="menu1" title="精彩视频"></m-card>
     <m-card icon="menu1" title="图文攻略"></m-card>
-    <img src="../assets/images/105.jpg" alt="">
   </div>
 </template>
 
