@@ -1,0 +1,12 @@
+{"_id":{"$oid":"5d01c720a284454e3cabe253"},"name":"新闻分类","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5d03598ba284454e3cabe254"},"name":"活动","__v":{"$numberInt":"0"},"parent":{"$oid":"5d01c720a284454e3cabe253"}}
+{"_id":{"$oid":"5d035992a284454e3cabe255"},"name":"公告","__v":{"$numberInt":"0"},"parent":{"$oid":"5d01c720a284454e3cabe253"}}
+{"_id":{"$oid":"5d0359b0a284454e3cabe256"},"parent":{"$oid":"5d01c720a284454e3cabe253"},"name":"赛事","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5d0369f870ebb02cdc885d57"},"name":"新闻","__v":{"$numberInt":"0"},"parent":{"$oid":"5d01c720a284454e3cabe253"}}
+{"_id":{"$oid":"5d0369fe70ebb02cdc885d58"},"parent":{"$oid":"5d085bd427f83e383c50494c"},"name":"法师","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5d036a0670ebb02cdc885d59"},"parent":{"$oid":"5d085bd427f83e383c50494c"},"name":"射手","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5d036a1070ebb02cdc885d5a"},"parent":{"$oid":"5d085bd427f83e383c50494c"},"name":"战士","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5d085bd427f83e383c50494c"},"name":"英雄分类","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5d085bf927f83e383c50494d"},"parent":{"$oid":"5d085bd427f83e383c50494c"},"name":"坦克","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5d085c0127f83e383c50494e"},"parent":{"$oid":"5d085bd427f83e383c50494c"},"name":"刺客","__v":{"$numberInt":"0"}}
+{"_id":{"$oid":"5d085c0727f83e383c50494f"},"parent":{"$oid":"5d085bd427f83e383c50494c"},"name":"辅助","__v":{"$numberInt":"0"}}
